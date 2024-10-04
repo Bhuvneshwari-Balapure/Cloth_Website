@@ -402,6 +402,15 @@ progress::-webkit-progress-bar {
   }
 }
 
+@media screen and (min-width: 344px) and (max-width: 882px) 
+{
+  .section_2  {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 /* small size mobile */
 /* @media screen and (max-width: 320px)  {
   .section_2 {
