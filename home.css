@@ -357,15 +357,14 @@
       width: 100%;
       padding:  4px 6px;
       display: grid;
-      grid-template-columns: auto;
-      gap: 10px;
+      grid-template-columns:0px 30px auto;
+      gap: 15px;
     }
-    .navbar .nav_icon ul{
+    .navbar .secnav{
       width: 100%;
-      padding:  4px 6px;
       display: grid;
-      grid-template-columns: auto;
-      gap: 10px;
+      grid-template-columns: auto  ;
+      gap: 5px;
     }
     .navbar nav ul {
       flex-direction: column;
@@ -387,7 +386,7 @@
     .menu {
       z-index: 1;
       position: absolute;
-      top: 110px;
+      top: 160px;
       left: 0px;
       display: none;
       flex-direction: column;
@@ -476,9 +475,10 @@
     .home_2 .home2_cards
     {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto ;
       gap: 10px;
     }
+  
 
   .home_2 .home2_cards .card {
       width: 100%; /* Ensure each card uses the full width of its grid column */
@@ -487,7 +487,7 @@
     /* home 4 */
     .home_4 .section4_cards {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto ;
       gap: 5px;
       margin: 10px 10px;
     }
@@ -495,28 +495,35 @@
       display: grid;
       grid-template-columns: auto;
     }
-  
+    .footer_parent .combine .center .center_right ul {
+      display: flex;
+      flex-direction: column;
+  }
+
   }
 
 
-
-
   
-  @media screen and (min-width: 420px) and (max-width: 770px)  {
+  @media screen and (min-width: 420px) and (max-width: 769px)  {
     .navbar {
       width: 100%;
-      padding: 2px 2px;
+      padding:  4px 6px;
       display: grid;
-      grid-template-columns: 200px auto auto auto;
-      
+      grid-template-columns:0px 30px auto;
+      gap: 10px;
+    }
+    .navbar .secnav{
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto  ;
       gap: 5px;
     }
     .navbar .nav_icon ul{
       width: 100%;
       padding:  4px 6px;
       display: grid;
-      grid-template-columns: auto;
-      gap: 10px;
+      grid-template-columns: auto auto auto auto;
+      gap: 20px;
     }
     .navbar nav ul {
       flex-direction: column;
@@ -627,6 +634,160 @@
     }
   }
   
+
+
+
+/* max width 882 , min width 344 */
+
+@media screen and (min-width: 344px) and (max-width: 882px) {
+  .navbar {
+    width: 100%;
+    padding:  4px 6px;
+    display: grid;
+    grid-template-columns:0px 30px auto;
+    gap: 15px;
+  }
+  .navbar .secnav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto  ;
+    gap: 5px;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  .navbar nav ul li {
+    margin: 1px 0px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+  }
+  .navbar .search input {
+    width: 80px;
+  }
+  .menu {
+    z-index: 1;
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(232, 232, 232);
+  }
+  .menu li {
+    padding: 15px;
+    text-align: left;
+  }
+  #click:checked ~ nav .menu,
+  .next_list {
+    /* display: flex; */
+    display: block;
+  }
+  .mobile_tablet {
+    display: block;
+  }
+  .top {
+    display: flex;
+     
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: wheat;
+    padding: 5px;
+  }
+
+  .top .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+  .top .text h1 {
+    color: brown;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .top .text small {
+    color: brown;
+    font-size: 10px;
+  }
+  .top .text p {
+    color: rgb(113, 28, 28);
+  }
+  .top .text p span {
+    border: 1px dashed brown;
+    padding: 2px;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+    gap: 8px;
+  }
+  .navbar nav ul li {
+    margin: 5px 0px;
+    padding: 3px 0px;
+  }
+  .navbar nav ul li a {
+    font-size: 12px;
+  }
+  .mobile_tablet img {
+    width: 60px;
+    height: 100px;
+  }
+  .home {
+    width: 90%;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  
+  .homefront_text {
+   left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .home .homefront_text h1 {
+    font-weight: lighter;
+    font-size: 30px;
+  }
+  .home_2 .home2_cards
+  {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+  }
+
+
+.home_2 .home2_cards .card {
+    width: 100%; /* Ensure each card uses the full width of its grid column */
+}
+  
+  /* home 4 */
+  .home_4 .section4_cards {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 5px;
+    margin: 10px 10px;
+  }
+  .footer_parent{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .footer_parent .combine .center .center_right ul {
+    display: flex;
+    flex-direction: column;
+}
+
+}
 
 
 
