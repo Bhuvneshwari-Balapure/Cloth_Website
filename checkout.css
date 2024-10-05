@@ -353,7 +353,6 @@ hr {
 .footer .footer_3 a {
   text-decoration: none;
 }
-
 @media screen and (max-width: 770px) {
   .navbar{
     display: grid;
